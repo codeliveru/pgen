@@ -1,0 +1,4 @@
+Installing:
+	make - compile binary.
+	make clean - remove compiled binary file.
+	make install - move compiled ELF to /usr/bin directory. Must run from root.
