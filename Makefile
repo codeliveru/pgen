@@ -1,6 +1,6 @@
 default:
-	gcc pwgen.c -o pwgen
+	gcc pgen.c -o pgen
 clean:
-	rm pwgen
+	rm pgen
 install:
-	mv pwgen /usr/bin/pwgen
+	mv pgen /usr/bin/pgen

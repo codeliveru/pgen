@@ -84,7 +84,7 @@ int main(int argc, char **argv)
 	 * If user entered empty value for first argument.
 	*/
 	if (!argv[1]) {
-		printf("Usage: pwgen <length>\n");
+		printf("Usage: pgen <length>\n");
 		exit(1);
 	}
 	else
