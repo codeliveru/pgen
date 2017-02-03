@@ -56,7 +56,7 @@ char *gen_pw(unsigned int length)
 	else
 		ns_esc = length - ns_latin;
 
-	for (i = 0; i < length; i++) {
+	for (i = 0; i < (length-1); i++) {
 		nrand = rand() % 100;
 
 		/*
@@ -72,7 +72,7 @@ char *gen_pw(unsigned int length)
 			else
 				pw[i] = s_esc[rand() % sizeof(s_esc)];
 	}
-	
+	pw[length-1] = '\0';
 	return pw;
 }
 int main(int argc, char **argv)
